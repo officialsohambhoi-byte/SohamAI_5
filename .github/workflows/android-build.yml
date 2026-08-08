@@ -35,7 +35,7 @@ jobs:
         run: gradle --version
 
       - name: Run unit tests
-        run: gradle test --no-daemon
+        run: ./gradlew :app:testDebugUnitTest --no-daemon
 
       - name: Build debug APK
         run: gradle :app:assembleDebug --no-daemon
